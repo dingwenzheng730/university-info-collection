@@ -1,0 +1,16 @@
+------ 2020-09-10 ----------------------
+# create virtualenv named env and activate it
+$ python3 -m venv env
+$ source env/bin/activate
+
+# install packages
+$ pip3 install django djangorestframework django-cors-headers gunicorn
+
+# create project named uic_backend
+$ django-admin startproject uic_backend
+
+# create an app named 'uic' within project 'uic_backend'
+$ python3 manage.py startapp uic
+
+# First migratation, then start the development server
+$ python3 manage.py migrate && python3 manage.py runserver
