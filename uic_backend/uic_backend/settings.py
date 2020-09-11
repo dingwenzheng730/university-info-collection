@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # setting cors policy is needed to make calls from ui to api
+    'corsheaders',
+    # add rest_framework support to the project
+    'rest_framework',
+    # add 'blog' app name so Django plugs it in to the project.
+    'uic'
 ]
 
 MIDDLEWARE = [
@@ -47,6 +54,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Add cors middleware (the order is important!)
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'uic_backend.urls'
@@ -118,3 +127,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ # For development purposes.
+CORS_ORIGIN_ALLOW_ALL = True

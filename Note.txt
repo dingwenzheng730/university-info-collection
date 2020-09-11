@@ -1,4 +1,6 @@
 ------ 2020-09-10 ----------------------
+SET UP BACKENd, MAKING IT RUNNING ON PORT 8000
+
 # create virtualenv named env and activate it
 $ python3 -m venv env
 $ source env/bin/activate
@@ -14,3 +16,16 @@ $ python3 manage.py startapp uic
 
 # First migratation, then start the development server
 $ python3 manage.py migrate && python3 manage.py runserver
+
+# create a requirements.txt file to keep a list of packages used in this project
+$ pip freeze > requirements.txt
+
+------ 2020-09-11 ------------------------
+CREATED AND ENABLED CRUD FOR MODELS, SET UP FRONT END
+
+# rest_framework provided CRUD in ModelViewSet
+# Create Model, views, serializers,
+# Made url Configuration for project and app
+# Setting Configuration
+# make migratation and migrate
+# Run!
