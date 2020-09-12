@@ -29,3 +29,10 @@ CREATED AND ENABLED CRUD FOR MODELS, SET UP FRONT END
 # Setting Configuration
 # make migratation and migrate
 # Run!
+
+# Create initial project
+# in the 'uic' directory
+$ npx create-react-app uic_frontend
+
+# Add dependency
+$ yarn add antd redux axios react-redux redux-thunk redux-logger

@@ -1,0 +1,9 @@
+
+const Types = {
+    EVENTS_LOADING: "EVENTS_LOADING",
+    GET_EVENTS:"GET_EVENTS",
+    DELETE_EVENT:"DELETE_EVENT",
+    CREATE_EVENT:"CREATE_EVENT"
+};
+
+export default Types
