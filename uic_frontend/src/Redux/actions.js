@@ -5,7 +5,7 @@ import axios from "axios";
 export const getEvents = () => {
     return dispatch => {
         dispatch({type:Types.EVENTS_LOADING, payload:true})
-        axios.get(`${process.env.REACT_APP_HOST_IP_ADDRESS}/api/events`)
+        axios.get(`${process.env.REACT_APP_HOST_IP_ADDRESS}/api/events/`)
             .then(response => {
                     dispatch({type:Types.GET_EVENTS, payload:response.data})
                 }

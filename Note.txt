@@ -21,7 +21,7 @@ $ python3 manage.py migrate && python3 manage.py runserver
 $ pip freeze > requirements.txt
 
 ------ 2020-09-11 ------------------------
-CREATED AND ENABLED CRUD FOR MODELS, SET UP FRONT END
+CREATED AND ENABLED CRUD FOR MODELS, SET UP FRONT END, REDUX NO WORKING YET
 
 # rest_framework provided CRUD in ModelViewSet
 # Create Model, views, serializers,
@@ -36,3 +36,10 @@ $ npx create-react-app uic_frontend
 
 # Add dependency
 $ yarn add antd redux axios react-redux redux-thunk redux-logger
+
+# Implemented Store, Reducer and actions for Redux, then implemented React part
+
+------ 2020-09 -12 -----------------------------
+FRONT END PAGE IS WORKING
+# Order of Corsheaders in Middleware is important
+# When making GET request, URL with / at the end is important 
