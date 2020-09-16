@@ -39,7 +39,14 @@ $ yarn add antd redux axios react-redux redux-thunk redux-logger
 
 # Implemented Store, Reducer and actions for Redux, then implemented React part
 
------- 2020-09 -12 -----------------------------
+------ 2020-09-12 -----------------------------
 FRONT END PAGE IS WORKING
 # Order of Corsheaders in Middleware is important
-# When making GET request, URL with / at the end is important 
+# When making GET request, URL with / at the end is important
+
+------ 2020-09-15 -----------------------------
+DOCKER AND NGINX WORKING
+# Created dockerfile for front and backend and yml file
+# Created Nginx config file
+# One line to run the application
+docker-compose up
