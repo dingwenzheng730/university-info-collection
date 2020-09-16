@@ -43,6 +43,7 @@ $ yarn add antd redux axios react-redux redux-thunk redux-logger
 FRONT END PAGE IS WORKING
 # Order of Corsheaders in Middleware is important
 # When making GET request, URL with / at the end is important
+REACT_APP_HOST_IP_ADDRESS=http://localhost:8000 yarn start
 
 ------ 2020-09-15 -----------------------------
 DOCKER AND NGINX WORKING
