@@ -51,3 +51,10 @@ DOCKER AND NGINX WORKING
 # Created Nginx config file
 # One line to run the application
 docker-compose up
+
+------ 2020-09-16 -----------------------------
+FRONT END SIDE USES TEMPLATE AND LOOKS GOOD
+# Delete all images
+docker system prune
+# Delete all volumes
+docker volume prune
